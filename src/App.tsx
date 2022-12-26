@@ -1,5 +1,7 @@
 import * as React from "react"
 
+import Header from "components/Header";
+
 export const App = () => (
-  <>App</>
+  <Header />
 );

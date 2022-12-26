@@ -1,6 +1,7 @@
-import { ChakraProvider, ColorModeScript, theme } from "@chakra-ui/react"
 import * as React from "react"
 import * as ReactDOM from "react-dom/client"
+
+import CustomChakraProvider from "styles"
 import { App } from "./App"
 import reportWebVitals from "./reportWebVitals"
 import * as serviceWorker from "./serviceWorker"
@@ -12,10 +13,9 @@ const root = ReactDOM.createRoot(container)
 
 root.render(
   <React.StrictMode>
-    <ChakraProvider theme={theme}>
-      <ColorModeScript />
+    <CustomChakraProvider>
       <App />
-    </ChakraProvider>
+    </CustomChakraProvider>
   </React.StrictMode>,
 )
 
