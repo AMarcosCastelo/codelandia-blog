@@ -35,6 +35,16 @@
       "last 1 safari version"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+       "prettier --write"
+     ]
+   },
   "dependencies": {
     "@chakra-ui/react": "2.4.4",
     "@emotion/react": "11.0.0",
@@ -67,6 +77,9 @@
     "@storybook/react": "6.5.15",
     "@storybook/testing-library": "0.0.13",
     "babel-plugin-named-exports-order": "0.0.2",
+    "husky": "8.0.2",
+    "lint-staged": "13.1.0",
+    "prettier": "2.8.1",
     "prop-types": "15.8.1",
     "webpack": "5.75.0"
   }
