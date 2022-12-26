@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Box,
   Container,
@@ -7,7 +6,7 @@ import {
   InputLeftElement,
   Text,
 } from '@chakra-ui/react';
-import MagnifyingGlassIcon from 'components/MagnifyingGlassIcon';
+import MagnifyingGlassIcon from '~/components/MagnifyingGlassIcon';
 
 const Header = () => {
   return (
