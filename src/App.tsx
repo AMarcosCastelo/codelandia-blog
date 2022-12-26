@@ -1,7 +1,5 @@
-import * as React from "react"
+import * as React from 'react';
 
-import Header from "components/Header";
+import Header from 'components/Header';
 
-export const App = () => (
-  <Header />
-);
+export const App = () => <Header />;

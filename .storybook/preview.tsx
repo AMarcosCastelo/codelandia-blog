@@ -9,19 +9,19 @@ export const parameters = {
   chakra: {
     theme,
   },
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
     },
   },
-}
+};
 
-addDecorator(storyFn => (
+addDecorator((storyFn) => (
   <ChakraProvider theme={theme}>
     <Fonts />
     <ColorModeScript />
     {storyFn()}
   </ChakraProvider>
-))
+));

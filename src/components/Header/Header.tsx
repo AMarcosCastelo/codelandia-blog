@@ -1,6 +1,13 @@
-import React from "react";
-import { Box, Container, Input, InputGroup, InputLeftElement, Text } from "@chakra-ui/react";
-import MagnifyingGlassIcon from "components/MagnifyingGlassIcon";
+import React from 'react';
+import {
+  Box,
+  Container,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  Text,
+} from '@chakra-ui/react';
+import MagnifyingGlassIcon from 'components/MagnifyingGlassIcon';
 
 const Header = () => {
   return (
@@ -30,14 +37,14 @@ const Header = () => {
               <InputLeftElement
                 height="100%"
                 pointerEvents="none"
-                children={ <MagnifyingGlassIcon color="white" /> }
+                children={<MagnifyingGlassIcon color="white" />}
               />
 
               <Input
                 backgroundColor="rgba(255, 255, 255, 0.2);"
                 type="text"
                 placeholder="Pesquisar no blog"
-                _placeholder={{ opacity: .5, color: '#fff' }}
+                _placeholder={{ opacity: 0.5, color: '#fff' }}
                 border="none"
                 borderRadius={5}
               />

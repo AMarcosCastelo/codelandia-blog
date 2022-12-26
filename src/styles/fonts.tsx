@@ -1,4 +1,4 @@
-import { Global } from '@emotion/react'
+import { Global } from '@emotion/react';
 
 export const Fonts = () => (
   <Global
@@ -6,4 +6,4 @@ export const Fonts = () => (
         @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;600;900&display=swap');
       `}
   />
-)
+);
