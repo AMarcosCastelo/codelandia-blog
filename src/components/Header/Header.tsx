@@ -12,19 +12,21 @@ import MagnifyingGlassIcon from 'components/MagnifyingGlassIcon';
 const Header = () => {
   return (
     <Box
+      display="flex"
+      alignItems="center"
       bg="linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%)"
-      height={250}
       position="relative"
       left={0}
       top={0}
     >
-      <Container maxW="md">
+      <Container maxW="container.sm">
         <Box
           display="flex"
           flexDirection="column"
           justifyContent="space-between"
-          height={200}
-          maxH={200}
+          height={150}
+          maxH={150}
+          marginY={10}
         >
           <Box display="flex" justifyContent="space-between">
             <Text color="white">Codelândia</Text>
@@ -32,7 +34,7 @@ const Header = () => {
             <Text color="white">Blog</Text>
           </Box>
 
-          <Box mb={10}>
+          <Box>
             <InputGroup>
               <InputLeftElement
                 height="100%"
@@ -41,12 +43,13 @@ const Header = () => {
               />
 
               <Input
-                backgroundColor="rgba(255, 255, 255, 0.2);"
+                backgroundColor="rgba(255, 255, 255, 0.2)"
                 type="text"
                 placeholder="Pesquisar no blog"
                 _placeholder={{ opacity: 0.5, color: '#fff' }}
                 border="none"
                 borderRadius={5}
+                size="lg"
               />
             </InputGroup>
           </Box>

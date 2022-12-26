@@ -7,6 +7,10 @@
     "airbnb-typescript",
     "plugin:prettier/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "prettier"
+  ],
   "overrides": [
     {
       "files": ["**/*.stories.*"],
