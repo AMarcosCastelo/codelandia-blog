@@ -1,11 +1,12 @@
 import { Box, Container, SimpleGrid } from '@chakra-ui/react';
 
+import ColorMode from './components/ColorMode';
 import Header from './components/Header';
 import PostCard from './components/PostCard';
 import { mockPostCard } from './utils';
 
 export const App = () => (
-  <>
+  <ColorMode mode="light" background="#F3F5F7">
     <Box mb={10}>
       <Header />
     </Box>
@@ -19,5 +20,5 @@ export const App = () => (
         })}
       </SimpleGrid>
     </Container>
-  </>
+  </ColorMode>
 );

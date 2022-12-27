@@ -1,4 +1,4 @@
-import { ChakraProvider, ColorModeScript, LightMode } from '@chakra-ui/react';
+import { ChakraProvider } from '@chakra-ui/react';
 
 import { Fonts } from './fonts';
 import { theme } from './theme';
@@ -6,8 +6,7 @@ import { theme } from './theme';
 const CustomChakraProvider = ({ children }: any) => (
   <ChakraProvider theme={theme}>
     <Fonts />
-    <ColorModeScript />
-    <LightMode>{children}</LightMode>
+    {children}
   </ChakraProvider>
 );
 
