@@ -1,4 +1,5 @@
 import { Box, Container, SimpleGrid } from '@chakra-ui/react';
+
 import Header from './components/Header';
 import PostCard from './components/PostCard';
 import { mockPostCard } from './utils';

@@ -1,6 +1,6 @@
 import { faker } from '@faker-js/faker';
 
-import { PostCardProps } from 'src/components/PostCard/PostCard';
+import { PostCardProps } from 'components/PostCard';
 
 export const mockPostCard = (): PostCardProps & { id: string } => ({
   date: '02 de jul, 2021',
