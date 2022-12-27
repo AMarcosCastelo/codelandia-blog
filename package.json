@@ -2,6 +2,7 @@
   "name": "codelandia-blog",
   "version": "0.1.0",
   "private": true,
+  "description": "That project was created to practice the Storybook and Chakra UI tools.",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
