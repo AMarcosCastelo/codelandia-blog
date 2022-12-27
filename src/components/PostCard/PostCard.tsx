@@ -9,7 +9,7 @@ export type PostCardProps = {
 
 const PostCard = ({ date, description, title }: PostCardProps): JSX.Element => {
   return (
-    <Card padding={5} maxW={900}>
+    <Card padding={5} maxW={900} borderRadius={5}>
       <Box display="flex" justifyContent="space-between" mb={5}>
         <Text fontSize="md" color="#717171">
           {date}

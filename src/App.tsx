@@ -12,7 +12,7 @@ export const App = () => (
     </Box>
 
     <Container maxW="container.sm" mb={10}>
-      <SimpleGrid spacing={5}>
+      <SimpleGrid spacing={10}>
         {Array.from({ length: 10 }).map(() => {
           const postCardMock = mockPostCard();
 
