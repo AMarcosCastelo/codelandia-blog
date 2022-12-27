@@ -1,7 +1,7 @@
 import { Box, Card, Heading, Text } from '@chakra-ui/react';
 import HeartIcon from '../HeartIcon';
 
-type PostCardProps = {
+export type PostCardProps = {
   date: string;
   title: string;
   description: string;
@@ -22,7 +22,9 @@ const PostCard = ({ date, description, title }: PostCardProps): JSX.Element => {
         {title}
       </Heading>
 
-      <Text color="#717171">{description}</Text>
+      <Text noOfLines={6} color="#717171">
+        {description}
+      </Text>
     </Card>
   );
 };
