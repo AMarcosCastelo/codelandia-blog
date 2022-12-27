@@ -21,7 +21,6 @@ export const parameters = {
 addDecorator((storyFn) => (
   <ChakraProvider theme={theme}>
     <Fonts />
-    <ColorModeScript />
     {storyFn()}
   </ChakraProvider>
 ));

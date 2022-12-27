@@ -1,12 +1,6 @@
-import {
-  Box,
-  Container,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Text,
-} from '@chakra-ui/react';
-import MagnifyingGlassIcon from '~/components/MagnifyingGlassIcon';
+import { Box, Container, Text } from '@chakra-ui/react';
+
+import InputSearch from '../InputSearch';
 
 const Header = () => {
   return (
@@ -33,25 +27,7 @@ const Header = () => {
             <Text color="white">Blog</Text>
           </Box>
 
-          <Box>
-            <InputGroup>
-              <InputLeftElement
-                height="100%"
-                pointerEvents="none"
-                children={<MagnifyingGlassIcon color="white" />}
-              />
-
-              <Input
-                backgroundColor="rgba(255, 255, 255, 0.2)"
-                type="text"
-                placeholder="Pesquisar no blog"
-                _placeholder={{ opacity: 0.5, color: '#fff' }}
-                border="none"
-                borderRadius={5}
-                size="lg"
-              />
-            </InputGroup>
-          </Box>
+          <InputSearch />
         </Box>
       </Container>
     </Box>

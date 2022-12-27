@@ -1,10 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
-
-import CustomChakraProvider from '~/styles';
 import { App } from './App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
+import CustomChakraProvider from './styles';
 
 const container = document.getElementById('root');
 if (!container) throw new Error('Failed to find the root element');
